@@ -5,8 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANACO - Calzado de Calidad</title>
   <meta name="description" content="Landing page oficial de MANACO: calzado de calidad, resistente y con estilo para toda ocasión.">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+
+    /* Skip link visible al enfocar */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #1a3d7c;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    /* Foco visible */
+    a:focus, button:focus {
+      outline: 3px solid #0a58ca;
+      outline-offset: 2px;
+    }
+
+    header, nav, main, footer, section, article {
+      padding: 1rem;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      background: #f4f4f4;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
+  <!-- Enlace para saltar al contenido principal -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Encabezado principal -->
   <header>
     <h1>MANACO</h1>
     <nav aria-label="Navegación principal">
@@ -18,44 +82,49 @@
     </nav>
   </header>
 
-  <main>
+  <!-- Contenido principal -->
+  <main id="contenido-principal">
+    <!-- Sección de bienvenida -->
     <section aria-labelledby="bienvenida">
       <h2 id="bienvenida">Bienvenido a MANACO</h2>
       <p>Calzado de calidad, resistente y con estilo para cada paso de tu vida.</p>
     </section>
 
+    <!-- Sección de productos -->
     <section id="productos" aria-labelledby="titulo-productos">
       <h2 id="titulo-productos">Nuestros Productos</h2>
       <ul>
         <li>
           <article>
             <h3>Botines de cuero</h3>
-            <img src="img/botines.jpg" alt="Botines de cuero color marrón de MANACO">
+            <img src="img/botines.jpg" alt="Botines de cuero marrón de MANACO sobre fondo blanco">
             <p>Elegantes y resistentes, ideales para el uso diario.</p>
           </article>
         </li>
         <li>
           <article>
             <h3>Zapatillas deportivas</h3>
-            <img src="img/zapatillas.jpg" alt="Zapatillas deportivas MANACO en color azul">
+            <img src="img/zapatillas.jpg" alt="Zapatillas deportivas MANACO color azul con suela blanca">
             <p>Comodidad y rendimiento para tus entrenamientos.</p>
           </article>
         </li>
         <li>
           <article>
             <h3>Sandalias casuales</h3>
-            <img src="img/sandalias.jpg" alt="Sandalias MANACO color beige para verano">
+            <img src="img/sandalias.jpg" alt="Sandalias MANACO color beige para verano sobre superficie de madera">
             <p>Frescura y estilo para tus días de descanso.</p>
           </article>
         </li>
       </ul>
     </section>
 
+    <!-- Sección sobre nosotros -->
     <section id="nosotros" aria-labelledby="titulo-nosotros">
       <h2 id="titulo-nosotros">Sobre Nosotros</h2>
       <p>En MANACO fabricamos calzado boliviano con los más altos estándares de calidad y tradición.</p>
     </section>
 
+    <!-- Sección contacto -->
     <section id="contacto" aria-labelledby="titulo-contacto">
       <h2 id="titulo-contacto">Contacto</h2>
       <address>
@@ -65,6 +134,7 @@
     </section>
   </main>
 
+  <!-- Pie de página -->
   <footer>
     <p>&copy; 2025 MANACO. Todos los derechos reservados.</p>
   </footer>
