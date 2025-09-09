@@ -1,12 +1,15 @@
 # primerexamen-raymond-panozo
 PRIMER EXAMEN
 
+DESCRIPCION BREVE SOBRE MI Y DEL PROYECTO
+
 Yo RAYMOND JESUS PANOZO CRESPO tecnico superior en SISTEMAS INFORMATICOS "Oruro - Bolivia" que actualmente estudia en la
 universidad UAB universidad adventista de Bolivia - licenciatura en ingieniria de sistemas
  he sido contratado como desarrollador/a web por la empresa MANACO para crear una landing
 page de la empresa.
 
 Accesibilidad (a11y)
+
 •  1 Skip link: Cómo se hizo: Con CSS lo “escondemos” fuera de pantalla y al recibir foco (:focus) aparece.
 Esto permite a personas con lectores de pantalla o que navegan con teclado saltar directamente al contenido, evitando pasar siempre por el menú.
 Por qué se hizo: Recomendación WCAG 2.1 (2.4.1 Bypass Blocks), Mejora usabilidad para usuarios de teclado. Enlace al inicio para saltar directo al contenido principal.
@@ -25,6 +28,7 @@ Por qué se hizo: Cumple WCAG 1.1.1 (Texto alternativo) y permite que lectores d
 Por qué se hizo:Evitar “sobrecargar” con ARIA y Regla: "Usa HTML antes que ARIA" (first rule of ARIA).
 
 SEO
+
 1 Título único (<title>): Se definió: “MANACO - Calzado de calidad boliviano para cada paso” y Decisión: usar máx. 60 caracteres, incluye marca + palabra clave principal (calzado boliviano).
 
 2 Meta descripción (<meta name="description">): Texto de 158 caracteres: describe productos + propuesta de valor y Decisión: optimizado para Google (150–160 caracteres), atractivo para CTR.
@@ -34,3 +38,5 @@ SEO
 4 Encabezados jerarquizados: Un único h1 para la marca, h2 para secciones y h3 para productos y Decisión: claridad semántica → mejora SEO + accesibilidad para lectores de pantalla.
 
 5 Optimización de imágenes: Uso de alt descriptivo en cada <img> y Decisión: mejora SEO en imágenes + accesibilidad (usuarios con lectores de pantalla).
+
+

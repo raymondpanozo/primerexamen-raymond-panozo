@@ -3,15 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>MANACO - Calzado de calidad boliviano para cada paso</title>
+  <title>MANACO - Calzado de calidad boliviana para cada paso</title>
   <meta name="description" content="Descubre el calzado boliviano de MANACO: zapatos, botines y sandalias de calidad, resistentes y con estilo. Perfectos para cada paso de tu vida.">
-
-  <meta property="og:title" content="MANACO - Calzado de calidad boliviano">
-  <meta property="og:description" content="Zapatos, botines y sandalias de MANACO: calzado resistente y con estilo, fabricado en Bolivia.">
-  <meta property="og:image" content="https://www.manaco.com/img/og-placeholder.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
 
   <style>
     * {
@@ -27,113 +20,148 @@
       background: #fff;
     }
 
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #1a3d7c;
+    header {
+      background: red;
       color: #fff;
-      padding: 8px;
-      z-index: 100;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-    .skip-link:focus {
-      top: 10px;
-    }
-
-    a:focus, button:focus {
-      outline: 3px solid #0a58ca;
-      outline-offset: 2px;
-    }
-
-    header, nav, main, footer, section, article {
       padding: 1rem;
     }
 
-    nav ul {
-      display: flex;
-      gap: 1rem;
-      list-style: none;
+    header h1 {
+      font-size: 1.2rem;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .banner {
+      display: none;
+    }
+
+    #productos ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    #productos li {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    #productos img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    #productos h3 {
+      margin: 0.5rem 0;
+    }
+
+    .btn-comprar {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #1a3d7c;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      background: #f4f4f4;
       padding: 1rem;
-      margin-top: 2rem;
+      color: blue;
+    }
+
+    @media (min-width: 600px) {
+      header {
+        background: #f4f4f4;
+        color: #111;
+      }
+
+      nav a {
+        color: #111;
+      }
+
+      .banner {
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      #productos ul {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      #productos li {
+        flex: 1;
+        margin: 0 0.5rem;
+      }
+
+      footer {
+        color: #111;
+      }
     }
   </style>
 </head>
 <body>
-  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
-
   <header>
     <h1>MANACO</h1>
-    <nav aria-label="Navegación principal">
+    <nav>
       <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#nosotros">Sobre nosotros</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="contenido-principal">
-    <section aria-labelledby="bienvenida">
-      <h2 id="bienvenida">Bienvenido a MANACO</h2>
-      <p>Calzado de calidad, resistente y con estilo para cada paso de tu vida.</p>
-    </section>
+  <div class="banner">Calzado que impulsa tu paso</div>
 
-    <section id="productos" aria-labelledby="titulo-productos">
-      <h2 id="titulo-productos">Nuestros Productos</h2>
+  <main>
+    <section id="productos">
+      <h2>Productos</h2>
       <ul>
         <li>
-          <article>
-            <h3>Botines de cuero</h3>
-            <img src="img/botines.jpg" alt="Botines de cuero marrón de MANACO sobre fondo blanco">
-            <p>Elegantes y resistentes, ideales para el uso diario.</p>
-          </article>
+          <img src="producto.png" alt="Producto 1 - Botines MANACO" width="300" height="300">
+          <h3>Producto 1</h3>
+          <p>$00.00</p>
+          <a href="#" class="btn-comprar">Comprar</a>
         </li>
         <li>
-          <article>
-            <h3>Zapatillas deportivas</h3>
-            <img src="img/zapatillas.jpg" alt="Zapatillas deportivas MANACO color azul con suela blanca">
-            <p>Comodidad y rendimiento para tus entrenamientos.</p>
-          </article>
+          <img src="producto.png" alt="Producto 2 - Zapatillas MANACO" width="300" height="300">
+          <h3>Producto 2</h3>
+          <p>$00.00</p>
+          <a href="#" class="btn-comprar">Comprar</a>
         </li>
         <li>
-          <article>
-            <h3>Sandalias casuales</h3>
-            <img src="img/sandalias.jpg" alt="Sandalias MANACO color beige para verano sobre superficie de madera">
-            <p>Frescura y estilo para tus días de descanso.</p>
-          </article>
+          <img src="producto.png" alt="Producto 3 - Sandalias MANACO" width="300" height="300">
+          <h3>Producto 3</h3>
+          <p>$00.00</p>
+          <a href="#" class="btn-comprar">Comprar</a>
         </li>
       </ul>
-    </section>
-
-    <section id="nosotros" aria-labelledby="titulo-nosotros">
-      <h2 id="titulo-nosotros">Sobre Nosotros</h2>
-      <p>En MANACO fabricamos calzado boliviano con los más altos estándares de calidad y tradición.</p>
-    </section>
-
-    <section id="contacto" aria-labelledby="titulo-contacto">
-      <h2 id="titulo-contacto">Contacto</h2>
-      <address>
-        <p>Email: <a href="mailto:info@manaco.com">info@manaco.com</a></p>
-        <p>Teléfono: <a href="tel:+59112345678">+591 123 456 78</a></p>
-      </address>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 MANACO. Todos los derechos reservados.</p>
+    <p>Copyright 2025 MANACO</p>
   </footer>
 </body>
 </html>
